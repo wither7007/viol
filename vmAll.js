@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Match Every Site
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      1.2
 // @description  I will pop up on every site!!
 // @author       You
 // @match        *://*/*
@@ -39,3 +39,14 @@
         mycopy(qs('body').outerHTML)
     }
 })();
+
+async function uc(content) {
+    console.log(content);
+    // await navigator.clipboard.writeText(document.querySelector('html').outerHTML);
+    await navigator.clipboard.writeText(content)
+    console.log('Copied links!');
+}
+strH = []
+myh = [...document.querySelectorAll('head>*')]
+myh.forEach(x => strH.push(x.outerHTML))
+uc(strH.join('\n'))
