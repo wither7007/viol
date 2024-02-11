@@ -3,12 +3,12 @@
 // @namespace   Violentmonkey Scripts
 // @match       http://localhost:3000/
 // @grant       none
-// @version     9.4
+// @version     9.5
 // @author      -
 // @description 2/7/2024, 10:37:09 PM
 // @downloadURL  https://raw.githubusercontent.com/wither7007/viol/viol/violent.js
 // ==/UserScript==
-console.log('a uc function works? 9.4th update')
+console.log('a uc function works? 9.5th update')
 
 async function uc(content) {
     console.log(content);
