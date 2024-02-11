@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Match Every Site
 // @namespace    http://tampermonkey.net/
-// @version      1.2
+// @version      1.3
 // @description  I will pop up on every site!!
 // @author       You
 // @match        *://*/*
@@ -10,7 +10,7 @@
 
 (function () {
     'use strict';
-    console.log('Violent Monkey')
+    console.log('Violent Monkey vmAll')
     window.log = (l) => console.log(l)
     window.qa = (x) => {
         return [...document.querySelectorAll(x)]
