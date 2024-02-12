@@ -49,4 +49,6 @@ async function uc(content) {
 strH = []
 myh = [...document.querySelectorAll('head>*')]
 myh.forEach(x => strH.push(x.outerHTML))
-uc(strH.join('\n'))
+let headCopy = () => {
+    uc(strH.join('\n'))
+}
