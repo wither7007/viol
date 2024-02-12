@@ -39,8 +39,12 @@
     window.Hcopy = () => {
         mycopy(qs('body').outerHTML)
     }
-})();
 
+    function pp() {
+        console.log('pp')
+    }
+    pp()
+})();
 async function uc(content) {
     console.log(content);
     // await navigator.clipboard.writeText(document.querySelector('html').outerHTML);
