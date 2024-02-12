@@ -7,10 +7,10 @@
 
 var input = document.createElement("input");
 window.showAlert = () => {
-    alert("this is new");
+    alert("monday message");
 }
 window.myword = 'wooordjj'
 input.type = "button";
-input.value = "GreaseMonkey Button";
+input.value = "Violet Monkey Button";
 input.addEventListener('click', showAlert)
 document.body.appendChild(input);
