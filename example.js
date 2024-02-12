@@ -2,12 +2,12 @@
 // @name        Hello World
 // @namespace   http://hayageek.com
 // @include     *
-// @version     1
+// @version     2
 // ==/UserScript==
 
 var input = document.createElement("input");
 window.showAlert = () => {
-    alert("more World");
+    alert("this is new");
 }
 window.myword = 'wooordjj'
 input.type = "button";
