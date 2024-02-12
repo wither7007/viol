@@ -2,7 +2,7 @@
 // @name        Hello World
 // @namespace   http://hayageek.com
 // @include     *
-// @version     2
+// @version     3
 // ==/UserScript==
 
 var input = document.createElement("input");
