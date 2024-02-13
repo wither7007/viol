@@ -2,7 +2,7 @@
 // @name        new world
 // @namespace   http://hayageek.com
 // @include     *
-// @version     5
+// @version     6
 // ==/UserScript==
 window.myword = 'monday night'
 window.showAlert = () => {
