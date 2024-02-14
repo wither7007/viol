@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Match Every Site
+// @name         vmAll
 // @namespace    http://tampermonkey.net/
 // @version      2.4
 // @description  I will pop up on every site!!
