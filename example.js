@@ -4,9 +4,9 @@
 // @include     *
 // @version     8
 // ==/UserScript==
-window.myword = 'monday night'
+window.myword = 'tues night'
 window.showAlert = () => {
-    alert("monday night");
+    alert("tues night");
 }
 b = document.createElement('button')
 b.innerHTML = 'myButton'
