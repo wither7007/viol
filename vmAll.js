@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         vmAll
 // @namespace    http://tampermonkey.net/
-// @version      2.7
+// @version      2.8
 // @description  I will pop up on every site!!
 // @author       You
 // @match        *://*/*
@@ -53,6 +53,8 @@
         console.log('Copied links!');
     }
     pp()
+    let h = document.querySelector('html')
+    h.addEventListener('click', () => uc('work with me'))
 })();
 strH = []
 myh = [...document.querySelectorAll('head>*')]
