@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         vmAll
 // @namespace    http://tampermonkey.net/
-// @version      2.4
+// @version      2.5
 // @description  I will pop up on every site!!
 // @author       You
 // @match        *://*/*
@@ -40,7 +40,7 @@
         mycopy(qs('body').outerHTML)
     }
 
-    function pp() {
+    window.pp = () => {
         console.log('pp')
     }
     pp()
@@ -56,4 +56,10 @@ myh = [...document.querySelectorAll('head>*')]
 myh.forEach(x => strH.push(x.outerHTML))
 let headCopy = () => {
     uc(strH.join('\n'))
+}
+function so() {
+    console.log('so')
+}
+window.ss = () => {
+    console.log('ss')
 }
