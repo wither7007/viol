@@ -18,6 +18,7 @@
     }
 })()
 window.myword = ' evening'
+alert(myword)
 window.showAlert = () => {
     alert("sat night");
 }
