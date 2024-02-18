@@ -28,8 +28,8 @@ let headCopy = () => {
     uc(strH.join('\n'))
 }
 b = document.createElement('button')
-b.innerHTML = 'now sunday'
-b.style.cssText = "z-index: 3;position: fixed; top: 0; left: 0; width: 300px; border: 3px solid #73AD21; color: blue; background-color: #f8f9fa;font-size: 1rem; padding: 10px;text-align: center";
+b.innerHTML = 'sunday'
+b.style.cssText = "z-index: 3;position: fixed; top: 0; left: 0; font-size:12px;width: 100px; border: 3px solid #73AD21; color: blue; background-color: #f8f9fa;font-size: 1rem; padding: 10px;text-align: center";
 document.body.prepend(b)
 strH = []
 myh = [...document.querySelectorAll('head>*')]
