@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name        new world
+// @name        example.js
 // @namespace   http://hayageek.com
 // @include     *
 // @version     2
