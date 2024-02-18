@@ -9,7 +9,6 @@
 // @downloadURL  https://raw.githubusercontent.com/wither7007/viol/viol/violent.js
 // ==/UserScript==
 console.log('9.6th update')
-
 async function uc(content) {
     console.log(content);
     // await navigator.clipboard.writeText(document.querySelector('html').outerHTML);

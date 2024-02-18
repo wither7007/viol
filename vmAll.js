@@ -25,21 +25,17 @@ alert('2.9')
         window.mycopy = (text) => {
             var node = document.createElement('textarea')
             var selection = document.getSelection()
-
             node.textContent = text
             document.body.appendChild(node)
-
             selection.removeAllRanges()
             node.select()
             document.execCommand('copy')
-
             selection.removeAllRanges()
             document.body.removeChild(node)
         }
         window.Hcopy = () => {
             mycopy(qs('body').outerHTML)
         }
-
         window.ss = () => {
             console.log('ss')
         }
