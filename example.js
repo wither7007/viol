@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name        example.js
 // @namespace   http://hayageek.com
-// @include     *
-// @version     2.6
+// @version     2.7
+// @match       https://jamessteffes.github.io/ 
 // ==/UserScript==
 (function () {
     'use strict';
@@ -28,7 +28,7 @@ let headCopy = () => {
     uc(strH.join('\n'))
 }
 b = document.createElement('button')
-b.innerHTML = 'sunday'
+b.innerHTML = 'monday pm'
 b.style.cssText = "z-index: 3;position: fixed; top: 0; left: 0; font-size:12px;width: 100px; border: 3px solid #73AD21; color: blue; background-color: #f8f9fa;font-size: 1rem; padding: 10px;text-align: center";
 document.body.prepend(b)
 strH = []
