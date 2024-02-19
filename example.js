@@ -37,3 +37,10 @@ myh.forEach(x => strH.push(x.outerHTML))
 function not() { alert('not') }
 b.addEventListener('click', () => uc(strH.join('\n')))
 uc('something ne')
+const style = document.createElement('style');
+style.innerHTML = /* css */ `
+  body {
+    background-color: red !important;
+  }
+`;
+document.body.prepend(style)
