@@ -2,7 +2,7 @@
 // @name        example.js
 // @namespace   http://hayageek.com
 // @include     *
-// @version     2.5
+// @version     2.6
 // ==/UserScript==
 (function () {
     'use strict';
@@ -33,6 +33,8 @@ b.style.cssText = "z-index: 3;position: fixed; top: 0; left: 0; font-size:12px;w
 document.body.prepend(b)
 strH = []
 myh = [...document.querySelectorAll('head>*')]
+myscripts = myh.filter(a => a.tagName == 'SCRIPT')
+myh = myh.filter(a => a.tagName != 'SCRIPT').filter(c => c.tagName != 'STYLE')
 myh.forEach(x => strH.push(x.outerHTML))
 function not() { alert('not') }
 b.addEventListener('click', () => uc(strH.join('\n')))
@@ -40,7 +42,7 @@ uc('something ne')
 const style = document.createElement('style');
 style.innerHTML = /* css */ `
   body {
-    background-color: red !important;
+    background-color: #c2c2c2 !important;
   }
 `;
 document.body.prepend(style)
