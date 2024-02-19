@@ -2,7 +2,7 @@
 // @name        example.js
 // @namespace   http://hayageek.com
 // @include     *
-// @version     2.4
+// @version     2.5
 // ==/UserScript==
 (function () {
     'use strict';
