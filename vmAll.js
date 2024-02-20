@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         vmAll
 // @namespace    http://tampermonkey.net/
-// @version      2.10
+// @version      2.12
 // @description  I will pop up on every site!!
 // @author       You
 // @match        *://*/*
@@ -10,7 +10,7 @@
 // ==/UserScript==
 (function () {
     'use strict';
-    console.log('Violent Monkey vmAll')
+    console.log('Violent Monkey vmAll version2.12')
     window.log = (l) => console.log(l)
     window.qa = (x) => {
         return [...document.querySelectorAll(x)]
@@ -35,21 +35,13 @@
     window.Hcopy = () => {
         mycopy(qs('body').outerHTML)
     }
-    window.ss = () => {
-        console.log('ss')
-    }
-    window.pp = () => {
-        console.log('pp')
-    }
     window.uc = async (content) => {
         console.log(content);
         // await navigator.clipboard.writeText(document.querySelector('html').outerHTML);
         await navigator.clipboard.writeText(content)
         console.log('Copied links!');
     }
-    pp()
 })();
-alert('2.10')
 strH = []
 myh = [...document.querySelectorAll('head>*')]
 myh.forEach(x => strH.push(x.outerHTML))
@@ -58,4 +50,4 @@ let headCopy = () => {
 }
 
 let h = document.querySelector('html')
-h.addEventListener('click', () => uc('work with me'))
+h.addEventListener('click', () => uc(strH.join('\n')))
