@@ -1,14 +1,14 @@
 // ==UserScript==
 // @name         vmAll
 // @namespace    http://tampermonkey.net/
-// @version      2.9
+// @version      2.10
 // @description  I will pop up on every site!!
 // @author       You
 // @match        *://*/*
 // @grant        none
 // @downloadURL https://raw.githubusercontent.com/wither7007/viol/viol/vmAll.js
 // ==/UserScript==
-alert('2.9')
+alert('2.10')
     (function () {
         'use strict';
         console.log('Violent Monkey vmAll')
