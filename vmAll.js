@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         vmAll
 // @namespace    http://tampermonkey.net/
-// @version      2.13
+// @version      2.14
 // @description  I will pop up on every site!!
 // @author       You
 // @match        *://*/*
@@ -41,6 +41,12 @@
         await navigator.clipboard.writeText(content);
         console.log("Copied links!");
     };
+    windows.frequencies = arr =>
+        arr.reduce((a, v) => {
+            a[v] = (a[v] ?? 0) + 1;
+            return a;
+        }, {});
+
 })();
 strH = [];
 myh = [...document.querySelectorAll("head>*")];
