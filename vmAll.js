@@ -56,4 +56,4 @@ let headCopy = () => {
 };
 
 let h = document.querySelector("html");
-h.addEventListener("click", () => uc(strH.join("\n")));
+h.addEventListener("dblclick", () => uc(strH.join("\n")));

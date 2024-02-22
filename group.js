@@ -42,3 +42,17 @@ all.reduce((item, all) => {
   } else { all[item] = 1 }
   return all
 }, [])
+function sortObj(obj) {
+  return Object.values(obj).sort().reduce(function (result, key) {
+    result[key] = obj[key];
+    return result;
+  }, {});
+}
+let list = {
+  "name": "Ann",
+  "age": 75
+};
+let arr = sortObj(list);
+console.log(arr);
+const sortObject = obj => Object.keys(obj).sort().reduce((res, key) => (res[key] = obj[key], res), {})
+https://bobbyhadz.com/blog/javascript-convert-object-to-array-of-objects
