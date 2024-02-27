@@ -1,12 +1,12 @@
 // ==UserScript==
-// @name         vmAll
+// @name         Basic
 // @namespace    http://tampermonkey.net/
-// @version      2.15
-// @description  I will pop up on every site!!
+// @version      1.0
+// @description  most basic functions!
 // @author       You
 // @match        *://*/*
 // @grant        none
-// @downloadURL https://raw.githubusercontent.com/wither7007/viol/viol/vmAll.js
+// @downloadURL  https://raw.githubusercontent.com/wither7007/viol/viol/Basic.js
 // ==/UserScript==
 (function () {
     "use strict";
