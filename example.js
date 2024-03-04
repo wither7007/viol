@@ -18,6 +18,14 @@
         console.log('Copied links!');
     }
 })()
+
+strH = [];
+myh = [...document.querySelectorAll("head>*")];
+myh.forEach((x) => strH.push(x.outerHTML));
+let headCopy = () => {
+    uc(strH.join("\n"));
+};
+
 window.myword = ' evening'
 window.showAlert = () => {
     alert("sat night");

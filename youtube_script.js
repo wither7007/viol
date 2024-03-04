@@ -3,13 +3,6 @@
 // @homepage     https://github.com/DeveloperMDCM/
 // @version      2.1.4
 // @description        Youtube Tools All in one local Download mp4, MP3 HIGT QUALITY without external service auto repeat video, skip ads, return dislikes and more
-// @description:zh-TW  無需第三方服務即可下載 YouTube 視頻等。
-// @description:zh-HK  無需第三方服務即可下載 YouTube 視頻等
-// @description:zh-CN  无需通过第三方服务等即可下载 YouTube 视频
-// @description:ja     外部サービスなどを使わずに YouTube 動画をダウンロード
-// @description:kr     외부 서비스 등 없이 YouTube 동영상 다운로드
-// @description:fr     Obtenez un lien brut de YouTube sans service externe. et de plus
-// @description:cs     Stahujte videa z YouTube bez externích služeb. a více
 // @description:en     Download MP4, MP3 HIGT QUALITY without external services. and more
 // @description:es     Youtube Tools All in one local Download mp4, MP3 HIGT QUALITY without external service auto repeat video, skip ads, return dislikes and more
 // @author       MDCM
