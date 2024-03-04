@@ -1,10 +1,11 @@
 // ==UserScript==
 // @name         Basic
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
 // @description  most basic functions!
 // @author       You
 // @match        *://*/*
+// @exclude      *://*.google.com/*
 // @grant        none
 // @downloadURL  https://raw.githubusercontent.com/wither7007/viol/viol/Basic.js
 // ==/UserScript==
