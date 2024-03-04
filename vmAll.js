@@ -48,6 +48,7 @@
         }, {});
 
 })();
+
 strH = [];
 myh = [...document.querySelectorAll("head>*")];
 myh.forEach((x) => strH.push(x.outerHTML));
@@ -55,5 +56,12 @@ let headCopy = () => {
     uc(strH.join("\n"));
 };
 
+window.uc = async () => {
+    let html = document.querySelector('html').outerHTML
+    // console.log(content);
+    // await navigator.clipboard.writeText(document.querySelector('html').outerHTML);
+    await navigator.clipboard.writeText(html);
+    console.log("Copied links!");
+};
 let h = document.querySelector("html");
-h.addEventListener("dblclick", () => uc(strH.join("\n")));
+h.addEventListener("dblclick", () => uc());
