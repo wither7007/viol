@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Basic
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      1.2
 // @description  most basic functions!
 // @author       You
 // @match        *://*/*
@@ -32,3 +32,8 @@
 strH = [];
 myh = [...document.querySelectorAll("head>*")];
 myh.forEach((x) => strH.push(x.outerHTML));
+myHt = () => { window.hout = document.querySelector('html').outerHTML }
+
+window.hrm = () => {
+    document.querySelector('head').remove()
+}
