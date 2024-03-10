@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Basic
 // @namespace    http://tampermonkey.net/
-// @version      1.5
+// @version      1.7
 // @description  most basic functions!
 // @author       You
 // @match        *://*/*
@@ -37,6 +37,6 @@ myht = () => { window.hout = document.querySelector('html').outerHTML }
 window.hrm = () => {
     document.querySelector('head').remove()
 }
-let help = () => {
+window.help = () => {
     console.log('hrm-remove head\nmyht-copy html to hout')
 }
