@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Basic
 // @namespace    http://tampermonkey.net/
-// @version      1.7
+// @version      1.8
 // @description  most basic functions!
 // @author       You
 // @match        *://*/*
