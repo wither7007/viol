@@ -40,3 +40,12 @@ window.hrm = () => {
 window.help = () => {
     console.log('hrm-remove head\nmyht-copy html to hout')
 }
+
+window.injectCSS = css => {
+    let el = document.createElement('style');
+    el.type = 'text/css';
+    el.innerText = css;
+    document.head.appendChild(el);
+    return el;
+};
+
