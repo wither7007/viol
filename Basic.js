@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Basic
 // @namespace    http://tampermonkey.net/
-// @version      1.8
+// @version      1.9
 // @description  most basic functions!
 // @author       You
 // @match        *://*/*
@@ -38,7 +38,7 @@ window.hrm = () => {
     document.querySelector('head').remove()
 }
 window.help = () => {
-    console.log('hrm-remove head\nmyht-copy html to hout')
+    console.log('hrm-remove head\nmyht-copy html to hout\ninjectCSS')
 }
 
 window.injectCSS = css => {
