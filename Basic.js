@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Basic
 // @namespace    http://tampermonkey.net/
-// @version      1.9
+// @version      2.0
 // @description  most basic functions!
 // @author       You
 // @match        *://*/*
@@ -37,8 +37,15 @@ myht = () => { window.hout = document.querySelector('html').outerHTML }
 window.hrm = () => {
     document.querySelector('head').remove()
 }
+
+let gfetch = async (yyy) => {
+    let response = await fetch(yyy)
+    window.wtext = await response.text()
+    console.log(wtext)
+}
+
 window.help = () => {
-    console.log('hrm-remove head\nmyht-copy html to hout\ninjectCSS')
+    console.log('hrm-remove head\nmyht-copy html to hout\ninjectCSS\ngfetch')
 }
 
 window.injectCSS = css => {
