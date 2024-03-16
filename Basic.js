@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Basic
 // @namespace    http://tampermonkey.net/
-// @version      2.0
+// @version      2.1
 // @description  most basic functions!
 // @author       You
 // @match        *://*/*
@@ -29,16 +29,20 @@
         }, {});
 
 })();
-strH = [];
+strh = '';
 myh = [...document.querySelectorAll("head>*")];
-myh.forEach((x) => strH.push(x.outerHTML));
-myht = () => { window.hout = document.querySelector('html').outerHTML }
+myh.forEach(x => strH += `${x.outerHTML} \n`);
+
+myht = () => {
+    window.hout = document.querySelector('html').outerHTML
+    console.log('copy(hout)')
+}
 
 window.hrm = () => {
     document.querySelector('head').remove()
 }
 
-let gfetch = async (yyy) => {
+window.gfetch = async (yyy) => {
     let response = await fetch(yyy)
     window.wtext = await response.text()
     console.log(wtext)
