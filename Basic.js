@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Basic
 // @namespace    http://tampermonkey.net/
-// @version      2.2
+// @version      2.3
 // @description  most basic functions!
 // @author       You
 // @match        *://*/*
@@ -29,9 +29,9 @@
         }, {});
 
 })();
-strh = '';
+strH = '';
 myh = [...document.querySelectorAll("head>*")];
-myh.forEach(x => strh += `${x.outerHTML} \n`);
+myh.forEach(x => strH += `${x.outerHTML} \n`);
 
 myht = () => {
     window.hout = document.querySelector('html').outerHTML
@@ -59,4 +59,12 @@ window.injectCSS = css => {
     document.head.appendChild(el);
     return el;
 };
-
+window.injectStript = script => {
+    // create a script element
+    let ourScript = document.createElement('script');
+    jsd = 'https://cdn.jsdelivr.net/gh/wither7007/gfetch@main/gscript.js';
+    // add the src, where we are loading the script from
+    ourScript.src = jsd;
+    // append the script to the doucment head (load the script into the DOM)
+    document.head.appendChild(ourScript);
+}
