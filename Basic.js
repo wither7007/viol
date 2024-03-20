@@ -49,7 +49,7 @@ window.gfetch = async (yyy) => {
 }
 
 window.help = () => {
-    console.log('hrm-remove head\nmyht-copy html to hout\ninjectCSS\ngfetch')
+    console.log('hrm-remove head\nmyht-copy html to hout\ninjectCSS\ngfetch\ninjectStript ')
 }
 
 window.injectCSS = css => {
